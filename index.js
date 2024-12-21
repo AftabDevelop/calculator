@@ -56,6 +56,20 @@ divide.addEventListener("click", () => {
   re.innerHTML = "Result : " + result;
 });
 
+const mod = document.querySelector('#fifth');
+mod.addEventListener('click',()=>{
+  const first_num = document.getElementById('first');
+  const number1 = Number(first_num.value);
+
+  const sec_num = document.getElementById('second');
+  const number2 = Number(sec_num.value);
+
+  const result = number1%number2;
+
+  const re = document.getElementById('result');
+  re.textContent="Result : " + result;
+});
+
 const erase = document.querySelector("#erase");
 erase.addEventListener("click", () => {
   const first_num = document.getElementById("first");
