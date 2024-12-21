@@ -1,0 +1,168 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Result container styles */
+#result {
+    text-align: center;
+    margin-right: 29px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Root container styles */
+#root {
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Button styles */
+button {
+    margin: 20px 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+/* Practice button styles */
+.prac {
+    height: 50px;
+    margin: 20px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Large screens (above 1024px) */
+@media (min-width: 1024px) {
+    #root {
+        width: 80%;
+        padding: 30px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .prac {
+        height: 60px;
+        font-size: 22px;
+        margin: 25px;
+    }
+
+    #result {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablet screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #root {
+        width: 85%;
+        padding: 25px;
+    }
+
+    button {
+        padding: 9px 18px;
+        font-size: 16px;
+    }
+
+    .prac {
+        height: 55px;
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+
+/* Mobile screens (below 768px) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    #root {
+        width: 95%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #result {
+        margin-right: 15px;
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+    button {
+        margin: 10px 5px;
+        padding: 8px 14px;
+        font-size: 14px;
+        width: calc(100% - 10px);
+        max-width: 300px;
+    }
+
+    .prac {
+        height: 45px;
+        font-size: 18px;
+        margin: 15px;
+        width: calc(100% - 30px);
+    }
+}
+
+/* Small mobile screens (below 375px) */
+@media (max-width: 375px) {
+    #root {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    button {
+        margin: 8px 4px;
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .prac {
+        height: 40px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    #result {
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+}
